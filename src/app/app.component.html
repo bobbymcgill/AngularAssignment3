@@ -11,3 +11,20 @@
     </div>
   </div>
 </div>
+<hr>
+<div class="container">
+<button 
+  class="btn btn-primary"
+  (click)="doStuff()">Display Details</button>
+  <hr>
+  <p *ngIf="paraVis">Secret Password=tuna</p>
+</div>
+<hr>
+<div class="container">
+  <p
+    
+    *ngFor="let click of timeClicks; let i = index" 
+    [ngStyle]="{backgroundColor: i > 3 ? 'lightblue' : 'transparent'}">
+    Time of Clicks = {{ click }} 
+  </p>
+</div>
